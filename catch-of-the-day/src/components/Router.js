@@ -1,1 +1,8 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+const Router = () => {
+	<BrowserRouter>
+	   <Switch>
+	   </Switch>
+	</BrowserRouter>
+}
