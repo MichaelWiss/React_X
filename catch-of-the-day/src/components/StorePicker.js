@@ -3,10 +3,13 @@ import { getFunName } from "../helpers";
 
 
 class StorePicker extends React.Component {
+	goToStore() {
+		console.log('Going to store');
+	}
 	render() {
 		console.log(this);
 		return (
-		<form className="store-selector">
+		<form className="store-selector" onSubmit={this.goToStore}>
 		  <h2>Please enter a store</h2>
 		  <input 
 		     type="text" 
