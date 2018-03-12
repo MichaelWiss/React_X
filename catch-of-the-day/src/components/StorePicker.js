@@ -3,15 +3,12 @@ import { getFunName } from "../helpers";
 
 
 class StorePicker extends React.Component {
-	constructor(){
-		super();
-		this.goToStore = this.goToStore.bind(this);
-	} 
+	
 
 	myInput = React.createRef();
 
 
-	goToStore() {
+	goToStore = (event) => {
 		event.preventDefault();
 		//stop form from submitting
 		console.log('Going to store');
