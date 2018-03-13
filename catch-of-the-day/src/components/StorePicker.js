@@ -13,7 +13,7 @@ class StorePicker extends React.Component {
 		//stop form from submitting
 		console.log('Going to store');
 		//get text
-		console.log(this.myInput);
+		console.log(this.myInput.value);
 		//change the page to /store//whatever-they-entered
 
 	}
