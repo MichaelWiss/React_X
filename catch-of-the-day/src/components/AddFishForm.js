@@ -6,8 +6,11 @@ class AddFishForm extends React.Component {
        <form className="fish-edit">
          <input name="name" placeholder="Name" />
          <input name="price" placeholder="Price" />
-         <input name="status" placeholder="Status" /> 
-         <textarea name="desc" placeholder="Desc" ></textarea>
+         <select name="status">
+           <option value="available">Fresh!</option>
+           <option value="unavailable">Sold Out!</option>
+         </select> 
+         <textarea name="desc" placeholder="Desc" />
          <input name="image" placeholder="Image" />
          <button type="submit">+ Add Fish</button>
         </form> 
