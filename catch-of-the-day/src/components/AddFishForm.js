@@ -1,9 +1,9 @@
 import React from "react";
 
-class Inventory extends React.Component {
+class addFishForm extends React.Component {
 	render() {
        return (
-       <div className="inventory">
+       <div className="AddFishForm">
        <h2>Inventory</h2>
        <form>
        
@@ -18,4 +18,4 @@ class Inventory extends React.Component {
 
 
 
-export default Inventory;
+export default AddFishForm;
