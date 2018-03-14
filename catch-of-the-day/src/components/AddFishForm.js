@@ -1,7 +1,12 @@
 import React from "react";
 
 class AddFishForm extends React.Component {
-	createFish = event => {
+	nameRef = React.crateRef();
+
+
+
+	
+	createFish = (event) => {
 
 		event.preventDefault();
 		console.log("Making a fish");
@@ -9,8 +14,8 @@ class AddFishForm extends React.Component {
 	render() {
        return (
        <form className="fish-edit" onSubmit={this.createFish} >
-         <input name="name" placeholder="Name" />
-         <input name="price" placeholder="Price" />
+         <input name="name" ref={this.nameRef} type="text" placeholder="Name" />
+         <input name="price" type="text" placeholder="Price" />
          <select name="status">
            <option value="available">Fresh!</option>
            <option value="unavailable">Sold Out!</option>
