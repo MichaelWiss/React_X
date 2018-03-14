@@ -3,12 +3,13 @@ import React from "react";
 class AddFishForm extends React.Component {
 	render() {
        return (
-       <form>
+       <form className="fish-edit">
          <input name="name" placeholder="Name" />
          <input name="price" placeholder="Price" />
          <input name="status" placeholder="Status" /> 
-         <input name="desc" placeholder="Desc" />
+         <textarea name="desc" placeholder="Desc" ></textarea>
          <input name="image" placeholder="Image" />
+         <button type="submit">+ Add Fish</button>
         </form> 
        	);
 	}
