@@ -18,9 +18,7 @@ class App extends React.Component {
     //set new fishes object to state
     this.setState({ fishes });
   };
-
-
-   render() {
+  render() {
    	  return (
        <div className="catch-of-the-day">
        <div className="menu">
