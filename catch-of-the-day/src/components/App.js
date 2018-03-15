@@ -10,6 +10,11 @@ class App extends React.Component {
      fishes: {},
      order: {}
   };
+  addFish = (fish) => {
+    console.log("Adding a fish");
+  };
+
+
    render() {
    	  return (
        <div className="catch-of-the-day">
@@ -17,7 +22,7 @@ class App extends React.Component {
          <Header tagline="FRESH Seafood Market"/>
        </div>
           <Order />
-          <Inventory />
+          <Inventory addFish={this.addFish} />
        </div>
    	  	);
    }
