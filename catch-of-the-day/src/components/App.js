@@ -28,7 +28,7 @@ class App extends React.Component {
        <div className="menu">
          <Header tagline="FRESH Seafood Market"/>
          <ul className="fishes">
-
+           <Fish />
          </ul>
        </div>
           <Order />
