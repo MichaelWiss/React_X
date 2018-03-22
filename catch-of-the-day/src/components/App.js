@@ -29,7 +29,9 @@ class App extends React.Component {
      //take a copy of state
      const order = { ...this.state.order };
      //add to order or update the number of order
+     order[key]= order[key] + 1 || 1;
      //call set state to update state
+     this.setState({ order });
   }
 
 
