@@ -15,7 +15,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const { params } = this.props.match;
-    const localStorageRef = localStorage.getItem(params.storeID);
+    const localStorageRef = localStorage.getItem(params.storeId);
     console.log(localStorageRef);
     this.ref = base.syncState(`${params.storeId}/fishes`, {
       context: this,
