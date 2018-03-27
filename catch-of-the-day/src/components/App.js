@@ -21,13 +21,15 @@ class App extends React.Component {
     });
   }
 
+  componentDidUpdate() {
+    console.log('It Updated!');
+  }
+
+
   componentWillUnmount() {
     base.removeBinding(this.ref);
   }
 
-  componentDidUpdate() {
-    
-  }
 
 
 
