@@ -25,6 +25,10 @@ class App extends React.Component {
     base.removeBinding(this.ref);
   }
 
+  componentDidUpdate() {
+    
+  }
+
 
 
   addFish = fish => {
