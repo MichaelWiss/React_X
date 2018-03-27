@@ -22,6 +22,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate() {
+    console.log(this.state.order)
     console.log('It Updated!');
   }
 
