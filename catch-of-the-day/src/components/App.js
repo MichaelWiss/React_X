@@ -60,7 +60,7 @@ class App extends React.Component {
      order[key]= order[key] + 1 || 1;
      //call set state to update state
      this.setState({ order });
-  }
+  };
 
 
   render() {
