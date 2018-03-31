@@ -6,7 +6,7 @@ class EditFishForm extends React.Component {
          <div className="fish-edit">
            <input type="text" name="name" />
            <input type="text" name="price" />
-           <input type="text" name="status" />
+           <select type="text" name="status" /select>
            <input type="text" name="desc" />
            <input type="text" name="image" />
         </div>
