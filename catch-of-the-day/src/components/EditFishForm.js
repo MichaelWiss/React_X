@@ -10,7 +10,7 @@ class EditFishForm extends React.Component {
              <option value="available">Fresh!</option>
              <option value="unavailable">Sold Out!</option>
            </select>  
-           <input type="text" name="desc" />
+           <textarea name="desc" />
            <input type="text" name="image" />
         </div>
        );
