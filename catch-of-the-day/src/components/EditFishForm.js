@@ -1,9 +1,9 @@
 import React from "react";
 
 class EditFishForm extends React.Component {
-	handleChange = (event) => {
-		console.log(event);
-	}
+	handleChange = event => {
+		console.log(event.currentTarget);
+	};
 	render() {
 		return (
          <div className="fish-edit">
@@ -23,11 +23,16 @@ class EditFishForm extends React.Component {
              type="text" 
              name="status"
              onChange={this.handleChange} 
-             value={this.props.fish.status}>
-             <option value="available">Fresh!</option>
-             <option value="unavailable">Sold Out!</option>
+             value={this.props.fish.status}
+             >
+               <option value="available">Fresh!</option>
+               <option value="unavailable">Sold Out!</option>
            </select>  
-           <textarea name="desc" value={this.props.fish.desc} />
+           <textarea 
+             name="desc"
+             onChange={this.handleChange} 
+             value={this.props.fish.desc} 
+           />
            <input 
              type="text" 
              name="image"
