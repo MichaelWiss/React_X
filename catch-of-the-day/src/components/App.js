@@ -52,8 +52,10 @@ class App extends React.Component {
   };
 
   updateFish = (key, updatedFish) => {
+    //take a copy of the current state
+    const fishes = { ...this.stare.fishes };
     
-  }
+  };
   
 
   loadSampleFishes = () => {
