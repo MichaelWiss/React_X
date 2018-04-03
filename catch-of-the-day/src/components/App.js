@@ -53,7 +53,7 @@ class App extends React.Component {
 
   updateFish = (key, updatedFish) => {
     //take a copy of the current state
-    const fishes = { ...this.stare.fishes };
+    const fishes = { ...this.state.fishes };
     //update that state
     fishes[key] = updatedFish;
     //set that to state
