@@ -4,7 +4,7 @@ class EditFishForm extends React.Component {
 	handleChange = event => {
 		console.log(event.currentTarget.value);
 		const updatedFish = { ...this.props.fish };
-		console.log(updateFish); 
+		console.log(updatedFish); 
 	};
 	render() {
 		return (
