@@ -60,7 +60,11 @@ class App extends React.Component {
     this.setState({ fishes });
   };
   
+  deletFish = (key) => {
 
+  }
+
+  
   loadSampleFishes = () => {
     this.setState({ fishes: sampleFishes });
   };
