@@ -61,10 +61,17 @@ class App extends React.Component {
   };
   
   deletFish = (key) => {
+    //take a copy of state
+    const fishes = { ...this.state.fishes };
+    //update that state
+    fishes[key] = null;
+    //update state
+    this.setState({ fishes });
+    
 
   }
 
-  
+
   loadSampleFishes = () => {
     this.setState({ fishes: sampleFishes });
   };
