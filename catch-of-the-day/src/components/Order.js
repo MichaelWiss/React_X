@@ -37,7 +37,9 @@ class Order extends React.Component {
        return (
        	<div className="order-wrap">
        	 <h2>Order</h2>
-       	 <ul className="order">{orderIds.map(this.renderOrder)}</ul>
+       	 <TransitionGroup component="ul" className="order">
+           {orderIds.map(this.renderOrder)}
+         </TransitionGroup>   
        	 <div className="total">
        	   Total:
        	   <strong>{formatPrice(total)}</strong>
