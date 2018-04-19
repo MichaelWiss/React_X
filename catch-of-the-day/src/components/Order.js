@@ -10,16 +10,33 @@ class Order extends React.Component {
         //make sure fish is loaded
         if(!fish) return null;
         if(!isAvailable) {
-          return <li key={key} >
+          return  (
+             <CSSTransition 
+               classNames="order"
+               key={key}
+               timeout={{ enter: 250, exit: 250 }}
+              > 
+            <li key={key}>
             Sorry {fish ? fish.name : 'fish'} is no longer available
           </li>
+          </CSSTransition>
+          );
         }
-		return (<li key={key}>
+return (
+    <CSSTransition
+      classNames="order"
+      key={key}
+      timeout={{ enter: 250, exit: 250 }}
+    >
+    (<li key={key}>
 		  {count} lbs {fish.name}
 		  {formatPrice(count * fish.price)}
-      <button onClick={() => this.props.removeFromOrder(key)}>&times;</button>
-		  </li>
-		  );
+           <button onClick={() => this.props.removeFromOrder(key)}>
+           &times;
+         </button>
+		    </li>
+      </CSSTransition>
+		 );
 	};
 	render() {
 		const orderIds = Object.keys(this.props.order);
