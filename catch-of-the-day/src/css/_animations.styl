@@ -5,5 +5,16 @@
   appear Must set transitionAppear={true} on animation component
 */
 
-div
- background red
+.order-enter
+  background red
+  transform: translateX(-120%)
+  transition 5s
+  &.order-enter-active
+    background yellow
+    transform: translateX(0)
+
+.order-exit
+  background thistle
+  transition 5s
+  .order-exit-active
+    background palegoldenrod    

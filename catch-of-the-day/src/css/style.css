@@ -1,5 +1,22 @@
-div {
+.order-enter {
   background: #f00;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+.order-enter.order-enter-active {
+  background: #ff0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.order-exit {
+  background: #d8bfd8;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+.order-exit .order-exit-active {
+  background: #eee8aa;
 }
 @font-face {
   font-family: "haymakerregular";
