@@ -28,7 +28,7 @@ return (
       key={key}
       timeout={{ enter: 250, exit: 250 }}
     >
-    (<li key={key}>
+     <li key={key}>
 		  {count} lbs {fish.name}
 		  {formatPrice(count * fish.price)}
            <button onClick={() => this.props.removeFromOrder(key)}>

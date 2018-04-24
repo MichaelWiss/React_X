@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "npm": "^6.0.0",
     "re-base": "^3.2.2",
     "react-rebase": "^1.0.5"
   }
