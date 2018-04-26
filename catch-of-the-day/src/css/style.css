@@ -30,7 +30,7 @@
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
-.count-enter.counter-enter-active {
+.count-enter.count-enter-active {
   background: #ff0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
