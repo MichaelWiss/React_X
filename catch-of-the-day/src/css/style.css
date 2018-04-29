@@ -1,6 +1,6 @@
 .order-enter {
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
+  -webkit-transform: translateX(-120%) rotate 0;
+          transform: translateX(-120%) rotate 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   max-height: 0;
@@ -25,8 +25,8 @@
 }
 .count-enter {
   background: #f00;
-  -webkit-transition: 5s;
-  transition: 5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }

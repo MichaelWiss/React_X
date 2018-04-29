@@ -34,7 +34,7 @@ return (
           <CSSTransition 
             classNames="count"
             key={count}
-            timeout={{ enter: 5000, exit: 5000 }}
+            timeout={{ enter: 500, exit: 500 }}
           >
           <span>{count}</span> 
           </CSSTransition>
