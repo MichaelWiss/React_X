@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import { formatPrice } from '../helpers';
 
 class Fish extends React.Component {
+      static propTypes = {
+          details:
+          addToOrder:  
+      }
 	handleClick = () => {
       this.props.addToOrder(this.props.index);
 	};
