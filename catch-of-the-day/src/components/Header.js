@@ -16,13 +16,11 @@ const Header = (props) => (
        </header>
  );
 
+ Header.propTypes = {
+  tagline: PropTypes.string.isRequired
+ }
 
-// class Header extends React.Component {
-// 	render() {
-//        return (
-       
-//        	)
-// 	}
-// }
+
+
 
 export default Header;
