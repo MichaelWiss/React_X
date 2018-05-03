@@ -2,6 +2,7 @@ import React from "react";
 import AddFishForm from "./AddFishForm";
 import PropTypes from "prop-types";
 import EditFishForm from "./EditFishForm";
+import Login from "./Login";
 
 
 class Inventory extends React.Component {
@@ -12,6 +13,7 @@ class Inventory extends React.Component {
     loadSampleFishes: PropTypes.func
   }
 	render() {
+       return <Login />;
        return (
        <div className="inventory">
         <h2>Inventory</h2>
