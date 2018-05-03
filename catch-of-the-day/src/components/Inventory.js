@@ -11,9 +11,15 @@ class Inventory extends React.Component {
     updateFish: PropTypes.func,
     deleteFish: PropTypes.func,
     loadSampleFishes: PropTypes.func
+  };
+
+  authenticate = () => {
+    alert('ya');
   }
+
+
 	render() {
-       return <Login />;
+       return <Login authenticate={this.authenticate} />;
        return (
        <div className="inventory">
         <h2>Inventory</h2>
