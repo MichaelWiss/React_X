@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import firebase from "firebase";
 import EditFishForm from "./EditFishForm";
 import Login from "./Login";
-import { firebaseApp } from "../base";
+import base, { firebaseApp } from "../base";
 
 
 
@@ -17,6 +17,9 @@ class Inventory extends React.Component {
   };
 
   authHandler = async (authData) => {
+    //look up current store in firebase db
+    //claim it if there is no owner
+    //set the state of the internet component
     console.log(authData);
   }
 
