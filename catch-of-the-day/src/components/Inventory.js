@@ -49,6 +49,7 @@ class Inventory extends React.Component {
 
 
 	render() {
+   const logout = <button onClick={this.logout}>Log out!</button>
        //check if logged in
        if(!this.state.uid) {
           return <Login authenticate={this.authenticate} />;
@@ -61,7 +62,7 @@ class Inventory extends React.Component {
         </div>
         );
        }
-
+       // they must be the owner render the inventory
        return (
        <div className="inventory">
         <h2>Inventory</h2>
