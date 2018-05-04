@@ -16,13 +16,28 @@ class Inventory extends React.Component {
     loadSampleFishes: PropTypes.func
   };
 
+  state = {
+    uid: null,
+    owner: null 
+  }
+
   authHandler = async (authData) => {
     //look up current store in firebase db
-    const store = await base.fetch(this.props.storeId);
+    const store = await base.fetch(this.props.storeId, { context: this });
+    console.log(store);
     //claim it if there is no owner
+    if (!store.owner) {
+      //save it as our own
+      await base.post (`${this.props.storeId}/owner`, {
+        data: authData.user.uid
+      });
+    }
     //set the state of the internet component
-    console.log(authData);
-  }
+    this.setState({
+      uid: authData.user.uid,
+      owner: store.owner || authData.user.uid
+    })
+  };
 
   authenticate = provider => {
     const authProvider = new firebase.auth[`${provider}AuthProvider`]();
@@ -34,7 +49,11 @@ class Inventory extends React.Component {
 
 
 	render() {
-       return <Login authenticate={this.authenticate} />;
+       //check if logged in
+       if(!this.state.uid) {
+          return <Login authenticate={this.authenticate} />;
+       }
+       
        return (
        <div className="inventory">
         <h2>Inventory</h2>
