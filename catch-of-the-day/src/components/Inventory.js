@@ -13,8 +13,8 @@ class Inventory extends React.Component {
     loadSampleFishes: PropTypes.func
   };
 
-  authenticate = () => {
-    alert('ya');
+  authenticate = provider => {
+    const authProvider = new firebase.auth()
   }
 
 
