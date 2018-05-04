@@ -8,13 +8,13 @@ const Login = () => (
     <p>Sign in to manage your store's inventory.</p>
     <button
       className="github"
-      onClick={() => this.props.authenticate("Github")}
+      onClick={() => props.authenticate("Github")}
     >
     Log In With Github
     </button>
      <button
       className="facebook"
-      onClick={() => this.props.authenticate("Facebook")}
+      onClick={() => props.authenticate("Facebook")}
     >
     Log In With Facebook
     </button>
