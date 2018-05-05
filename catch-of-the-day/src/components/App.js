@@ -25,6 +25,7 @@ class App extends React.Component {
     if(localStorageRef) {
       this.setState({ order: JSON.parse(localStorageRef) });
     } 
+
     this.ref = base.syncState(`${params.storeId}/fishes`, {
       context: this,
       state: "fishes"
@@ -118,7 +119,8 @@ class App extends React.Component {
           <Order 
             fishes={this.state.fishes} 
             order={this.state.order}
-            removeFromOrder={this.removeFromOrder} />
+            removeFromOrder={this.removeFromOrder} 
+          />
           <Inventory 
             addFish={this.addFish}
             updateFish={this.updateFish}
